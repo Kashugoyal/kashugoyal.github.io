@@ -247,13 +247,12 @@ textarea {
           <li><a href="#projects">PROJECTS</a></li>
           <li><a href="#contact">CONTACT</a></li>
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">EXTERNAL
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#">Merchandise</a></li>
-              <li><a href="#">Extras</a></li>
-              <li><a href="#">Media</a></li> 
+              <li><a href="#">CAD</a></li>
+              <li><a href="#">BLOG</a></li>
             </ul>
           </li>
           <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
@@ -357,23 +356,23 @@ textarea {
             <img src="image/ati.jpg" alt="Paris">
             <p><strong>Sawyer Force Control</strong></p>
             <p>In Progress</p>
-            <button class="btn" data-toggle="modal" data-target="#myModal">Read More</button>
+            <button class="btn" data-toggle="modal" data-target="#project1">Read More</button>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="thumbnail">
             <img src="image/ati.jpg" alt="New York">
-            <p><strong>New York</strong></p>
+            <p><strong>Mathematica Simulation</strong></p>
             <p>Sat. 28 November 2015</p>
-            <button class="btn">Buy Tickets</button>
+            <button class="btn" data-toggle="modal" data-target="#project2">Read More</button>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="thumbnail">
             <img src="image/ati.jpg" alt="San Francisco">
-            <p><strong>San Francisco</strong></p>
+            <p><strong>Robotic Manipulation</strong></p>
             <p>Sun. 29 November 2015</p>
-            <button class="btn">Buy Tickets</button>
+            <button class="btn" data-toggle="modal" data-target="#project3">Read More</button>
           </div>
         </div>
       </div>
@@ -383,7 +382,7 @@ textarea {
             <img src="image/bax.jpg" alt="Paris">
             <p><strong>Paris</strong></p>
             <p>Fri. 27 November 2015</p>
-            <button class="btn">Buy Tickets</button>
+            <button class="btn" data-toggle="modal" data-target="#project4">Read More</button>
           </div>
         </div>
         <div class="col-sm-4">
@@ -391,7 +390,7 @@ textarea {
             <img src="image/bax.jpg" alt="New York">
             <p><strong>New York</strong></p>
             <p>Sat. 28 November 2015</p>
-            <button class="btn">Buy Tickets</button>
+            <button class="btn" data-toggle="modal" data-target="#project4">Read More</button>
           </div>
         </div>
         <div class="col-sm-4">
@@ -409,7 +408,7 @@ textarea {
 
   <!-- project 1 -->
 
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="project1" role="dialog">
     <div class="modal-dialog modal-lg">
 
       <!-- Modal content-->
@@ -444,11 +443,107 @@ textarea {
             <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
               <span class="glyphicon glyphicon-remove"></span> Cancel
             </button>
+            <p><a href="https://github.com/kashugoyal"><img src="image/gdark.png"></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- project 2 -->
+
+  <div class="modal fade" id="project2" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4>Mathematical Simulation of 3 DOF Trebuchet</h4>
+        </div>
+        <div class="modal-body">
+
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>Description</h2>
+              <p>
+                A trebuchet has three degrees of freedom, one of which is initially constrained
+as the 'to be projected' mass, rests on the floor. As the counterweight descends, the contact is lost and
+the mass is launched when the two links align.
+</p>
+<p>After the projectile is launched, the mass impacts a horizontal line at a height of 2.5m from the base. To show realistic results, a coefficient of restitution with a value of 0.5 is added to the impact update law. The angular velocity of mass just changes direction owing to friction.
+              </p>
+              <p>The entire simulation was done using Mathematica and the detailed report on fproblem formulation and simulation can be found <a href="#">here</a>.
+              </p>
+              <img src="image/bax.jpg">
+              <h2>Skills Involved</h2>
+              <ul>
+                <li>Mathematica</li>
+                <li>Lagrangian Dynamics</li>
+                <li>Rigid Body Simulations</LI>
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+              <span class="glyphicon glyphicon-remove"></span> Cancel
+            </button>
             <p>Need <a href="#">help?</a></p>
           </div>
         </div>
       </div>
     </div>
+
+
+
+  <!-- project 3 -->
+
+  <div class="modal fade" id="project3" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4>Robotic Manipulation</h4>
+        </div>
+        <div class="modal-body">
+
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>Description</h2>
+              <p>
+                Robots have the capability to follow precise trajectories at desired velocities and accelerations. Simply put, a robot can move the way you tell you to and at the speed you tell you to. </p>
+<p>This project is the application of concepts of Forward and Inverse Kinematics to manipulate the end effector of KUKA youBot along a given time-scaled reference trajectory. A PI feedback controller is used for error compensation. The animation of the simulation is below:
+              </p>
+              <img src="image/bax.jpg">
+              <p>The entire simulation was done using Mathematica. The link to the Git Repository is <a href="#">here</a>.
+              </p>
+              
+              <h2>Skills Involved</h2>
+              <ul>
+                <li>Mathematica</li>
+                <li>Inversse Kinematics</li>
+                <li>Feedback Controls</LI>
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+              <span class="glyphicon glyphicon-remove"></span> Cancel
+            </button>
+            <p>Need <a href="#">help?</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 
 
