@@ -4023,8 +4023,8 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			cursor: default;
-			height: 200vh;
-			max-height: 50em;
+			/*height: 200vh;*/
+			/*max-height: 50em;*/
 			min-height: 23em;
 			overflow: hidden;
 			position: relative;
@@ -4108,7 +4108,7 @@
 			}
 
 			.tiles1 article:nth-child(6n - 5):before {
-				background-color: rgba(49, 87, 135, 0.69);
+				background-color: rgba(49, 87, 135, 0.39);
 			}
 
 			.tiles1 article:nth-child(6n - 4):before {
