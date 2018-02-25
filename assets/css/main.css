@@ -2880,6 +2880,8 @@
 			.tiles article:nth-child(6n):before {
 				background-color: rgba(135, 197, 164, 0.4);
 			}
+			
+
 
 		@media screen and (max-width: 1280px) {
 
@@ -2889,6 +2891,7 @@
 				max-height: 30em;
 				min-height: 20em;
 			}
+
 
 		}
 
@@ -2926,6 +2929,10 @@
 					width: 100% !important;
 				}
 
+/*			.tiles article:nth-child(2n) {
+      -webkit-flex-direction: row-reverse;
+    }
+*/
 		}
 
 /* Contact Method */
